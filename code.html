@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DentisTree - The Dental Clinic and Implant Centre | Gurgaon</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface": "#f8f9ff",
+            "on-secondary-fixed-variant": "#3a475c",
+            "secondary": "#525f75",
+            "on-primary-fixed-variant": "#005049",
+            "primary-fixed": "#89f5e7",
+            "on-tertiary-fixed": "#281800",
+            "surface-dim": "#cbdbf5",
+            "secondary-container": "#d6e3fe",
+            "inverse-on-surface": "#eaf1ff",
+            "on-tertiary-container": "#fffbff",
+            "on-error": "#ffffff",
+            "tertiary-fixed": "#fedeb2",
+            "primary-container": "#008378",
+            "surface-container-low": "#eff4ff",
+            "surface-container": "#e5eeff",
+            "surface-bright": "#f8f9ff",
+            "background": "#f8f9ff",
+            "surface-tint": "#006a61",
+            "on-surface": "#0b1c30",
+            "surface-container-lowest": "#ffffff",
+            "surface-variant": "#d3e4fe",
+            "secondary-fixed": "#d6e3fe",
+            "error-container": "#ffdad6",
+            "on-error-container": "#93000a",
+            "surface-container-highest": "#d3e4fe",
+            "outline": "#6d7a77",
+            "on-secondary-container": "#58657b",
+            "primary": "#00685f",
+            "surface-container-high": "#dce9ff",
+            "error": "#ba1a1a",
+            "on-secondary-fixed": "#0e1c2f",
+            "on-tertiary-fixed-variant": "#584323",
+            "on-primary-container": "#f4fffc",
+            "on-background": "#0b1c30",
+            "inverse-surface": "#213145",
+            "secondary-fixed-dim": "#bac7e1",
+            "outline-variant": "#bcc9c6",
+            "on-tertiary": "#ffffff",
+            "tertiary": "#6f5836",
+            "primary-fixed-dim": "#6bd8cb",
+            "on-primary": "#ffffff",
+            "on-primary-fixed": "#00201d",
+            "tertiary-fixed-dim": "#e0c298",
+            "on-secondary": "#ffffff",
+            "tertiary-container": "#8a714d",
+            "inverse-primary": "#6bd8cb",
+            "on-surface-variant": "#3d4947"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.25rem",
+            "gutter": "1.5rem",
+            "gutter-mobile": "1rem",
+            "space-lg": "1.5rem",
+            "margin-mobile": "1.25rem",
+            "space-2xl": "4rem",
+            "margin": "3rem",
+            "space-sm": "0.5rem",
+            "space-xl": "2.5rem",
+            "space-md": "1rem"
+          },
+          "fontFamily": {
+            "label-md": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["Plus Jakarta Sans"],
+            "body-sm": ["Inter"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "caption": ["Inter"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "body-md": ["Inter"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "display-hero": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "body-lg": ["Inter"]
+          },
+          "fontSize": {
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+            "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "display-hero": ["56px", { "lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-shadow-soft {
+      box-shadow: 0 4px 24px -2px rgba(11, 28, 48, 0.06);
+    }
+    .custom-shadow-elevated {
+      box-shadow: 0 16px 36px -6px rgba(0, 104, 95, 0.12), 0 4px 12px -2px rgba(11, 28, 48, 0.04);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-primary selection:text-white min-h-screen w-full overflow-x-hidden overflow-y-auto">
+<!-- 1. Top Navigation Bar (Shared Component Anchor) -->
+<header class="bg-surface/95 backdrop-blur-md border-b border-outline-variant/30 sticky top-0 z-50 shadow-sm w-full py-2.5 sm:py-3.5">
+<div class="flex items-center justify-between w-full px-4 sm:px-6 md:px-12 max-w-7xl mx-auto gap-4">
+<a class="flex items-center gap-2.5 sm:gap-3.5 group flex-shrink-0" href="#">
+<img alt="DentisTree Logo" class="h-8 sm:h-10 w-auto object-contain transition-transform duration-200 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvGEqq1RdFPKQ4vQz0HTapMq20ARuYyo94c1mEoocHtTx6NrcTkNoEiENeN5UNHW6MdL9eSVkzgByoBO964MaFF0PtImNq02TPvscXTUN04NCoSICDWLJ8VVRTvZ7wSt9UR3z1G5V2br8gyaINF8NaoVp6AVnzLhK70eLEo7MhXeqOAo8zEhA1w9SRnnNY4BvfXyDf_KaQDX85KRvt8SrJTW9tErNZ-dPmIDJYZuO3hZFLKOceoWyx9Q"/>
+<div class="flex flex-col">
+<span class="text-lg sm:text-headline-sm font-headline-sm font-bold tracking-tight text-on-surface">DentisTree</span>
+<span class="text-caption font-caption text-secondary tracking-wider uppercase -mt-0.5 hidden sm:block">The Dental Clinic &amp; Implant Centre</span>
+</div>
+</a>
+<nav class="hidden lg:flex items-center gap-7 xl:gap-8">
+<a class="text-on-surface-variant hover:text-primary pb-1 transition-colors font-label-lg text-label-lg" href="#treatments">Treatments</a>
+<a class="text-on-surface-variant hover:text-primary pb-1 transition-colors font-label-lg text-label-lg" href="#doctor">About Doctor</a>
+<a class="text-on-surface-variant hover:text-primary pb-1 transition-colors font-label-lg text-label-lg" href="#transformations">Transformations</a>
+<a class="text-on-surface-variant hover:text-primary pb-1 transition-colors font-label-lg text-label-lg" href="#clinic-location">Clinic &amp; Location</a>
+<a class="text-on-surface-variant hover:text-primary pb-1 transition-colors font-label-lg text-label-lg" href="#reviews">Reviews</a>
+</nav>
+<div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+<a aria-label="Call Clinic" class="flex xl:hidden items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-primary/10 text-primary border border-primary/20 hover:bg-primary hover:text-on-primary transition-colors" href="tel:01244589200">
+<span class="material-symbols-outlined text-[18px] sm:text-[20px]">call</span>
+</a>
+<a class="hidden xl:flex items-center gap-2.5 px-4 py-2 rounded-full bg-surface-container-low border border-outline-variant/40 text-on-surface font-label-md text-label-md tracking-wider hover:bg-surface-container transition-colors shadow-sm" href="tel:01244589200">
+<span class="material-symbols-outlined text-primary text-[18px]">call</span>
+<span class="font-semibold">0124-458-9200</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+</a>
+<a class="inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3 py-2 sm:px-5 sm:py-2.5 rounded-full bg-primary hover:bg-primary-container text-on-primary text-xs sm:text-sm font-semibold transition-all duration-200 shadow-sm hover:shadow active:scale-95 whitespace-nowrap" href="#booking">
+<span class="material-symbols-outlined text-[16px] sm:text-[18px]">calendar_today</span>
+<span>Book Consultation</span>
+</a>
+</div>
+</div>
+</header>
+<!-- 2. Hero Section -->
+<section class="relative overflow-hidden pt-8 pb-14 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-b from-surface via-surface-container-low/50 to-surface">
+<!-- Subtle Background Ambient Geometry -->
+<div class="absolute top-0 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 left-10 w-80 h-80 bg-secondary-container/40 rounded-full blur-2xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+<!-- Left Hero Column -->
+<div class="lg:col-span-7 flex flex-col items-start gap-5 sm:gap-6">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary-fixed/40 border border-primary/20 text-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-xs sm:text-label-md font-label-md uppercase tracking-wider font-semibold">Gurgaon Premier Dental &amp; Implant Care</span>
+</div>
+<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-display-hero font-display-hero font-bold text-on-surface leading-tight text-balance">Premium Dental Care in the Heart of Gurgaon.</h1>
+<p class="text-body-md sm:text-body-lg font-body-lg text-on-surface-variant max-w-2xl leading-relaxed">Experience painless, state-of-the-art dentistry in a serene luxury environment. From invisible aligners to precision implantology, your smile is crafted by leading specialists.</p>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4 pt-1 w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3.5 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-all shadow-md hover:shadow-lg active:scale-95 text-center" href="#booking">
+<span>Book an Appointment</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3.5 rounded-full border border-inverse-surface text-inverse-surface hover:bg-inverse-surface hover:text-inverse-on-surface font-label-lg text-label-lg transition-all duration-200 text-center" href="#treatments">
+<span>Our Services</span>
+</a>
+</div>
+<div class="flex items-center gap-4 sm:gap-6 pt-4 border-t border-outline-variant/30 w-full">
+<div class="flex -space-x-2 flex-shrink-0">
+<div class="w-9 h-9 rounded-full bg-surface-container-high border-2 border-surface-container-lowest flex items-center justify-center text-xs font-semibold text-primary">Dr.</div>
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary border-2 border-surface-container-lowest flex items-center justify-center text-xs font-semibold">4.9★</div>
+<div class="w-9 h-9 rounded-full bg-secondary text-white border-2 border-surface-container-lowest flex items-center justify-center text-xs font-semibold">15y</div>
+</div>
+<div class="text-body-sm font-body-sm text-secondary">
+<span class="font-semibold text-on-surface">5,000+ Happy Patients</span> in DLF &amp; Golf Course Hub
+        </div>
+</div>
+</div>
+<!-- Right Hero Column: Team Visual and Feature Pills -->
+<div class="lg:col-span-5 flex flex-col gap-3.5 w-full">
+<div class="relative rounded-2xl sm:rounded-3xl overflow-hidden bg-surface-container-lowest p-2 sm:p-2.5 custom-shadow-soft border border-outline-variant/40 w-full">
+<div class="relative rounded-xl sm:rounded-2xl overflow-hidden aspect-[4/3] bg-surface-container">
+<img alt="DentisTree Clinical Specialists and Team Gurgaon" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5WOI-Wx5zSQI4RLP5B2GFdTV4yHOlcSfVgnSwYkaLSJfAFZBKe4Jdr1tvJdnFn-yGX3Sb5gqItz8IUpHmXbqZymbG1CqBx23lEqFq-jMzzqcNkAnkSNFDHCEwHrCdeNd1RLwyxtE3K8AREWUNfSt-YWfShiQ-uBYD041ib-f8M3jbTipgrXXZi9cY4FM0ANUzl1-Utxnpfh19SHDLK0dug7UuOzfIMS7jj5Lij7Pg-_bntvv_jLxWdQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/60 via-transparent to-transparent pointer-events-none"></div>
+<!-- Desktop floating badge anchored cleanly inside top right with margin -->
+<div class="hidden md:flex absolute top-3 right-3 z-10 bg-white/95 backdrop-blur-md border border-outline-variant/30 rounded-xl p-2.5 shadow-md items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed/50 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div class="min-w-0 pr-1">
+<p class="text-on-surface font-bold text-xs leading-tight">NABH Standards</p>
+<p class="text-secondary font-medium text-[11px] leading-tight">100% Sterilization</p>
+</div>
+</div>
+<!-- Desktop floating badge bottom left -->
+<div class="hidden md:flex absolute bottom-3 left-3 z-10 bg-white/95 backdrop-blur-md border border-outline-variant/30 rounded-xl p-2.5 shadow-md items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">biotech</span>
+</div>
+<div class="min-w-0 pr-1">
+<p class="text-on-surface font-bold text-xs leading-tight">3D Digital Scanning</p>
+<p class="text-secondary font-medium text-[11px] leading-tight">Zero Impression Mess</p>
+</div>
+</div>
+<!-- Desktop floating team pill bottom right -->
+<div class="hidden md:flex absolute bottom-3 right-3 z-10 bg-inverse-surface/90 text-white rounded-lg px-2.5 py-1.5 shadow-md items-center gap-1.5 border border-white/20">
+<span class="material-symbols-outlined text-[14px] text-primary-fixed">groups</span>
+<span class="text-xs font-semibold whitespace-nowrap">Full Specialist Team</span>
+</div>
+</div>
+</div>
+<!-- Responsive Pill Grid for Mobile / Tablet to prevent any overlapping -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 md:hidden w-full">
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-2.5 shadow-sm flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed/50 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div class="min-w-0">
+<p class="text-on-surface font-bold text-xs leading-tight">NABH Standards</p>
+<p class="text-secondary text-[11px] leading-tight">100% Sterilization</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-2.5 shadow-sm flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">biotech</span>
+</div>
+<div class="min-w-0">
+<p class="text-on-surface font-bold text-xs leading-tight">3D Scanning</p>
+<p class="text-secondary text-[11px] leading-tight">Zero Impression Mess</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-2.5 shadow-sm flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-secondary-container flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">groups</span>
+</div>
+<div class="min-w-0">
+<p class="text-on-surface font-bold text-xs leading-tight">Specialist Team</p>
+<p class="text-secondary text-[11px] leading-tight">MDS Doctors</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Trust Banner -->
+<section class="border-y border-outline-variant/30 bg-surface-container-lowest py-6 sm:py-7">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 items-center">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-tertiary-fixed/40 flex items-center justify-center text-tertiary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px] sm:text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="min-w-0">
+<span class="text-sm sm:text-headline-sm font-headline-sm text-on-surface font-bold block leading-tight">4.9 / 5</span>
+<span class="text-caption sm:text-body-sm text-secondary block truncate">Google Reviews</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-primary-fixed/40 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px] sm:text-[20px]">award_star</span>
+</div>
+<div class="min-w-0">
+<span class="text-sm sm:text-headline-sm font-headline-sm text-on-surface font-bold block leading-tight">15+ Years</span>
+<span class="text-caption sm:text-body-sm text-secondary block truncate">Clinical Practice</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-secondary-container flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px] sm:text-[20px]">medical_services</span>
+</div>
+<div class="min-w-0">
+<span class="text-sm sm:text-headline-sm font-headline-sm text-on-surface font-bold block leading-tight">Painless Tech</span>
+<span class="text-caption sm:text-body-sm text-secondary block truncate">Precision Dental</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px] sm:text-[20px]">security</span>
+</div>
+<div class="min-w-0">
+<span class="text-sm sm:text-headline-sm font-headline-sm text-on-surface font-bold block leading-tight">Verified Centre</span>
+<span class="text-caption sm:text-body-sm text-secondary block truncate">Tier-1 Protocols</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Services Section (Bento Grid Style) -->
+<section class="py-16 sm:py-20 md:py-28 bg-surface" id="treatments">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 md:mb-14">
+<div>
+<span class="text-label-md font-label-md uppercase tracking-wider text-primary font-semibold">Specialized Disciplines</span>
+<h2 class="text-2xl sm:text-headline-lg font-headline-lg font-bold text-on-surface mt-2">Precision Dental Solutions</h2>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-md">Combining surgical mastery with gentle care. Every treatment plan is digitally simulated before any clinical procedure begins.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+<!-- Dental Implants -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 sm:p-8 border border-outline-variant/30 custom-shadow-soft relative overflow-hidden flex flex-col justify-between group hover:border-primary/40 transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div class="w-13 h-13 sm:w-14 sm:h-14 rounded-xl bg-primary-fixed/50 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px] sm:text-[28px]">dentistry</span>
+</div>
+<span class="px-3.5 py-1 rounded-full bg-primary/10 text-primary font-label-md text-label-md font-semibold">Lifetime Warranty</span>
+</div>
+<h3 class="text-xl sm:text-headline-md font-headline-md font-bold text-on-surface mb-3">Dental Implants &amp; Full Mouth Restoration</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6 leading-relaxed">Swiss &amp; German titanium and zirconia implants placed with computer-guided flapless surgery. Restore permanent chewing function and natural facial aesthetics in a single surgical sitting.</p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-4 border-t border-outline-variant/30">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-body-sm font-body-sm text-on-surface font-medium">Osseointegrated Precision</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-body-sm font-body-sm text-on-surface font-medium">CBCT 3D Bone Mapping</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-body-sm font-body-sm text-on-surface font-medium">Immediate Loading</span>
+</div>
+</div>
+</div>
+<div class="pt-6 mt-4 border-t border-outline-variant/20 flex items-center justify-between">
+<a class="text-label-lg font-label-lg text-primary font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1" href="#booking">Explore Implantology Protocol<span class="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+</div>
+</div>
+<!-- Invisible Aligners -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 sm:p-8 border border-outline-variant/30 custom-shadow-soft flex flex-col justify-between group hover:border-primary/40 transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div class="w-13 h-13 sm:w-14 sm:h-14 rounded-xl bg-secondary-container/50 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[26px] sm:text-[28px]">view_in_ar</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-secondary-fixed font-label-md text-label-md font-semibold">Zero Brackets</span>
+</div>
+<h3 class="text-xl sm:text-headline-md font-headline-md font-bold text-on-surface mb-3">Invisible Aligners</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6 leading-relaxed">Custom clear aligners designed via AI-guided 3D digital smile simulation. Discreetly straighten teeth without metal wires or lifestyle interruptions.</p>
+<ul class="space-y-2.5 text-body-sm font-body-sm text-secondary">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check</span>Virtual outcome preview before start
+          </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check</span>Comfortable, food-friendly removable trays
+          </li>
+</ul>
+</div>
+<div class="pt-6 mt-4 border-t border-outline-variant/20">
+<a class="text-label-lg font-label-lg text-primary font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1" href="#booking">Get Smile Simulation <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+</div>
+</div>
+<!-- Root Canal Treatment -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 sm:p-8 border border-outline-variant/30 custom-shadow-soft flex flex-col justify-between group hover:border-primary/40 transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div class="w-13 h-13 sm:w-14 sm:h-14 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[26px] sm:text-[28px]">healing</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-primary-fixed/40 text-on-primary-fixed-variant font-label-md text-label-md font-semibold">Single Visit</span>
+</div>
+<h3 class="text-xl sm:text-headline-md font-headline-md font-bold text-on-surface mb-3">Root Canal Treatment (RCT)</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-5 leading-relaxed">Microscopic Endodontics under high-resolution magnification. Experience painless, single-visit tooth preservation with rotary nickel-titanium instrumentation.</p>
+<div class="p-3.5 bg-surface-container-low rounded-xl text-caption font-caption text-secondary">High-frequency apex locators ensure complete root decontamination without trauma.</div>
+</div>
+<div class="pt-6 mt-4 border-t border-outline-variant/20">
+<a class="text-label-lg font-label-lg text-primary font-semibold inline-flex items-center gap-1" href="#booking">Read Treatment Guide <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+</div>
+</div>
+<!-- Cosmetic Smile Design & Veneers -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 sm:p-8 border border-outline-variant/30 custom-shadow-soft flex flex-col justify-between group hover:border-primary/40 transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div class="w-13 h-13 sm:w-14 sm:h-14 rounded-xl bg-tertiary-fixed/50 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[26px] sm:text-[28px]">auto_awesome</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-tertiary-fixed/30 text-on-tertiary-fixed font-label-md text-label-md font-semibold">Smile Architecture</span>
+</div>
+<h3 class="text-xl sm:text-headline-md font-headline-md font-bold text-on-surface mb-3">Cosmetic Smile Design &amp; Veneers</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-5 leading-relaxed">Custom ultra-thin porcelain laminates, laser gum re-contouring, and clinic-grade teeth whitening. Engineered to harmonize naturally with facial contours and smile dynamics.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+<div class="border border-outline-variant/30 rounded-xl p-3 bg-surface-container-low/50">
+<span class="font-headline-sm text-on-surface block font-semibold">1 Visit</span>
+<span class="text-caption font-caption text-secondary">Advanced Zoom Teeth Whitening</span>
+</div>
+<div class="border border-outline-variant/30 rounded-xl p-3 bg-surface-container-low/50">
+<span class="font-headline-sm text-on-surface block font-semibold">Handcrafted</span>
+<span class="text-caption font-caption text-secondary">E-Max Porcelain Ceramic Veneers</span>
+</div>
+</div>
+</div>
+<div class="pt-6 mt-4 border-t border-outline-variant/20">
+<a class="text-label-lg font-label-lg text-primary font-semibold inline-flex items-center gap-1" href="#booking">Book Aesthetic Consultation <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. About The Doctor (Dr. Khanna Spotlight) -->
+<section class="py-16 sm:py-20 md:py-28 bg-surface-container-low border-y border-outline-variant/30 relative" id="doctor">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
+<div class="flex flex-col lg:flex-row items-center gap-8 md:gap-12">
+<!-- Doctor Photo Column -->
+<div class="w-full lg:w-5/12 flex-shrink-0">
+<div class="relative max-w-md mx-auto lg:max-w-none">
+<div class="rounded-2xl overflow-hidden bg-surface-container-lowest border border-outline-variant/40 custom-shadow-elevated p-3">
+<div class="rounded-xl overflow-hidden aspect-[4/5] bg-surface-container-high relative">
+<img class="w-full h-full object-cover" data-alt="Senior lead implantologist smiling warmly in a modern clinic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ1vHQi0b1sGPOiKWtEHIgywylYuK23bsrEi5b--eU_dUL1F9Z5_laed0UgwDu97XLjV1PXBdXOApfAQfFrAx-rPCqMWBVD5abK-OLfAiOiD3CM0lS-5OxYMtOHDNb9UnNQYZZsNMjwmEldfWF2OIn1j3p7cu_iyQi5nUEE4UOulcNC6oO-U7fqyoTe2b-_5aBVQNlWSiVRqeYONBKywzApXBz4EOXiZ-P2emjysYX"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 sm:bottom-5 sm:left-5 sm:right-5 text-white">
+<span class="px-2.5 py-1 rounded bg-primary text-white text-caption font-caption uppercase tracking-wider mb-2 inline-block font-semibold">Lead Implantologist</span>
+<h3 class="text-2xl sm:text-headline-md font-headline-md text-white font-bold">Dr. Khanna</h3>
+<p class="text-body-sm font-body-sm text-inverse-on-surface/90">BDS, MDS | Fellow in Oral Implantology</p>
+</div>
+</div>
+</div>
+<!-- Positioned relative card that won't clip -->
+<div class="mt-3 sm:mt-0 sm:absolute sm:-bottom-5 sm:right-4 bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-3 sm:p-4 custom-shadow-soft">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-primary-container text-white flex items-center justify-center font-bold text-base sm:text-lg flex-shrink-0">15+</div>
+<div>
+<p class="text-label-md font-label-md text-on-surface font-semibold">Years Practice</p>
+<p class="text-caption font-caption text-secondary">Global Accreditation</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Doctor Bio Column -->
+<div class="w-full lg:w-7/12 flex flex-col items-start gap-5 sm:gap-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-fixed/40 text-on-primary-fixed-variant font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[16px]">stethoscope</span>Clinical Leadership
+      </div>
+<h2 class="text-2xl sm:text-headline-lg font-headline-lg font-bold text-on-surface">Compassionate Dentistry Meets Surgical Precision.</h2>
+<p class="text-body-md sm:text-body-lg font-body-lg text-on-surface-variant leading-relaxed">Heading the surgical and restorative wing at DentisTree, Dr. Khanna has pioneered patient-centric oral healthcare in Gurgaon for over 15 years. Backed by rigorous international fellowships in Implantology and Cosmetic Restorative Dentistry, his approach prioritizes zero-anxiety care and lifetime restorative durability.</p>
+<p class="text-body-sm sm:text-body-md font-body-md text-secondary leading-relaxed">Every procedure adheres to strict painless anesthesia delivery protocols, utilizing computerized injection systems and minimally invasive surgical guides to eliminate treatment apprehension for patients of all ages.</p>
+<div class="flex flex-wrap gap-2.5 sm:gap-3 pt-2">
+<div class="px-3.5 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant/30 text-on-surface flex items-center gap-2 text-xs sm:text-label-md font-label-md font-medium">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>10,000+ Smiles Treated
+        </div>
+<div class="px-3.5 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant/30 text-on-surface flex items-center gap-2 text-xs sm:text-label-md font-label-md font-medium">
+<span class="material-symbols-outlined text-primary text-[18px]">local_hospital</span>Painless Anesthesia Protocol
+        </div>
+<div class="px-3.5 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant/30 text-on-surface flex items-center gap-2 text-xs sm:text-label-md font-label-md font-medium">
+<span class="material-symbols-outlined text-primary text-[18px]">public</span>International Fellowship
+        </div>
+</div>
+<div class="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4 w-full sm:w-auto">
+<a class="px-6 py-3.5 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-semibold transition-all shadow-sm text-center" href="#booking">Schedule with Dr. Khanna</a>
+<a class="px-5 py-3.5 rounded-full border border-outline-variant text-on-surface hover:bg-surface-container transition-colors font-label-lg text-label-lg font-semibold text-center" href="#clinic-location">Visit Clinic</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Transformations & Works Gallery -->
+<section class="py-16 sm:py-20 md:py-28 bg-surface" id="transformations">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
+<div class="text-center max-w-2xl mx-auto mb-10 md:mb-16">
+<span class="text-label-md font-label-md uppercase tracking-wider text-primary font-semibold">Real Smile Journeys</span>
+<h2 class="text-2xl sm:text-headline-lg font-headline-lg font-bold text-on-surface mt-2">Clinical Transformations</h2>
+<p class="text-body-md font-body-md text-on-surface-variant mt-3">Explore curated before &amp; after results achieved with microscopic precision, digital aligners, and biomimetic porcelain restorations.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/30 custom-shadow-soft flex flex-col">
+<div class="relative aspect-[16/10] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up aesthetic comparison shot of clean, natural porcelain dental veneers transformation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGJO32AtLeDbCiXNSRyRNwYAqEOtHAL2KhwcIAzm6exHDVPTiGYQuIWzPrdQTJyJz4DAKOkn5YFyfYQ7Ion9M_Qi3KrGvQThoyQ866niqzMvyez21II1O9bBmrosllW4YB2qsgsyartHExXsWuWRMV3oG8XFZChiEZevrfxcI_vx0u6a-Lrmvl-TKxrZrQ4I2zSiFyhyewrP4mEtzb3tkL7YN0izRRaAp3gI58jpWP"/>
+<div class="absolute top-3 left-3 bg-inverse-surface/80 text-inverse-on-surface px-2.5 py-1 rounded text-caption font-caption">Before &amp; After</div>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 text-primary font-bold px-2 py-0.5 rounded text-caption font-caption">2 Visits</div>
+</div>
+<div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+<div>
+<span class="text-label-md font-label-md text-tertiary font-semibold">Cosmetic Smile Design</span>
+<h4 class="text-lg sm:text-headline-sm font-headline-sm font-bold text-on-surface mt-1 mb-2">Porcelain Veneers</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Corrected minor crowding and deep discoloration with 8 ultra-thin E-Max handcrafted ceramic veneers.</p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 mt-4 flex items-center justify-between text-caption font-caption text-secondary">
+<span>Patient: Executive, Gurgaon</span>
+<span class="text-primary font-medium">Verified Case</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/30 custom-shadow-soft flex flex-col">
+<div class="relative aspect-[16/10] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="High precision dental photography showing orthodontic teeth alignment transformation with clear invisible aligners" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHgT6aOscO-Mh7cX-4wtROz-vj4Lv6qtttLRYAELzxasBhfboVABkUg0vdZwTTVuVZp_lhAz_YjP9HOZHZLbWm2pwUpGBjPmvKFN7JRZgMxufuEa-Cdf3TGxQxjY1K03P3J_Ot23FcNOnu-OQYtqKVLVEANTT5viYOid-iIY06wu0RYHJi0Oqr7IzFVzba-ACfzVtlwDDfKAorcCT4IqQcQ1KGWjFwmlZ38srX-PN2"/>
+<div class="absolute top-3 left-3 bg-inverse-surface/80 text-inverse-on-surface px-2.5 py-1 rounded text-caption font-caption">Before &amp; After</div>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 text-primary font-bold px-2 py-0.5 rounded text-caption font-caption">7 Months</div>
+</div>
+<div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+<div>
+<span class="text-label-md font-label-md text-primary font-semibold">Invisible Orthodontics</span>
+<h4 class="text-lg sm:text-headline-sm font-headline-sm font-bold text-on-surface mt-1 mb-2">Clear Aligners</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Resolved moderate anterior crowding and deep overbite discreetly without traditional metal brackets.</p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 mt-4 flex items-center justify-between text-caption font-caption text-secondary">
+<span>Patient: Young Professional</span>
+<span class="text-primary font-medium">Verified Case</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/30 custom-shadow-soft flex flex-col sm:col-span-2 lg:col-span-1">
+<div class="relative aspect-[16/10] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Medical dental reconstruction photo showing full mouth implant rehabilitation and ceramic crown restoration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoLYDdXSlJMu4a3CWKhoBqAB9f5YG153Uve2oD7VOFcMtzUGONzI0s1ryOoaHrPGlGfO1atNTC_mNJGXyvLFMJo_TtN4f20DIgHZsgAlEYT_OqgL0w32O3uZ0seAmUwd3V-In0uZNr6oT1PJ2swW2MEk36f3ah6H-DA24GqHBl8_hqx_XTZgVN0UaWvtK4Ogm_3nF_ep6ujdieQebpgEPtMXyL81MASynfk_d95W-g"/>
+<div class="absolute top-3 left-3 bg-inverse-surface/80 text-inverse-on-surface px-2.5 py-1 rounded text-caption font-caption">Before &amp; After</div>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 text-primary font-bold px-2 py-0.5 rounded text-caption font-caption">Complete Rehab</div>
+</div>
+<div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+<div>
+<span class="text-label-md font-label-md text-on-secondary-container font-semibold">Implantology</span>
+<h4 class="text-lg sm:text-headline-sm font-headline-sm font-bold text-on-surface mt-1 mb-2">Full Mouth Rehabilitation</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Complete restorative rehabilitation with strategic Swiss implants and monolithic zirconia bridges.</p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 mt-4 flex items-center justify-between text-caption font-caption text-secondary">
+<span>Patient: Senior Citizen</span>
+<span class="text-primary font-medium">Verified Case</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8 sm:mt-12 text-center">
+<p class="text-caption font-caption text-secondary max-w-xl mx-auto leading-relaxed">*Individual results may vary based on clinical diagnosis and bone density. Case documentation photographed at DentisTree Gurgaon.</p>
+</div>
+</div>
+</section>
+<!-- Patient Reviews Snippet -->
+<section class="py-16 sm:py-20 md:py-24 bg-surface-container-low/60 border-t border-outline-variant/30" id="reviews">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
+<div class="text-center max-w-2xl mx-auto mb-10 md:mb-16">
+<span class="text-label-md font-label-md uppercase tracking-wider text-primary font-semibold">Patient Testimonials</span>
+<h2 class="text-2xl sm:text-headline-lg font-headline-lg font-bold text-on-surface mt-2">Trusted by Thousands Across Gurgaon</h2>
+<p class="text-body-sm sm:text-body-md font-body-md text-on-surface-variant mt-2">Read unfiltered experiences from our patients who chose gentle, precision oral care.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-lowest p-6 sm:p-8 rounded-2xl border border-outline-variant/30 custom-shadow-soft flex flex-col justify-between">
+<div>
+<div class="flex text-tertiary mb-4">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-sm sm:text-body-md font-body-md text-on-surface-variant mb-6 leading-relaxed">"I had extreme dental anxiety before visiting Dr. Khanna. The painless anesthesia protocol and calm clinic ambience made my root canal completely stress-free."</p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20">
+<div class="text-label-lg font-label-lg text-on-surface font-semibold">Ananya Sengupta</div>
+<div class="text-caption font-caption text-secondary mt-0.5">DLF Phase 5, Gurgaon</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-lowest p-6 sm:p-8 rounded-2xl border border-outline-variant/30 custom-shadow-soft flex flex-col justify-between">
+<div>
+<div class="flex text-tertiary mb-4">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-sm sm:text-body-md font-body-md text-on-surface-variant mb-6 leading-relaxed">"Top-notch implant technology. Everything from 3D scanning to crown placement was smooth. Highly recommend DentisTree to anyone seeking quality oral care."</p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20">
+<div class="text-label-lg font-label-lg text-on-surface font-semibold">Col. Rajesh Malhotra</div>
+<div class="text-caption font-caption text-secondary mt-0.5">Golf Course Road, Gurgaon</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-container-lowest p-6 sm:p-8 rounded-2xl border border-outline-variant/30 custom-shadow-soft flex flex-col justify-between">
+<div>
+<div class="flex text-tertiary mb-4">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-sm sm:text-body-md font-body-md text-on-surface-variant mb-6 leading-relaxed">"Completed my invisible aligner treatment in under 8 months. The digital smile preview matched the actual results 100%. Beautiful clinic and warm staff!"</p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20">
+<div class="text-label-lg font-label-lg text-on-surface font-semibold">Pooja Bansal</div>
+<div class="text-caption font-caption text-secondary mt-0.5">Sohna Road, Gurgaon</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Appointment Booking Module -->
+<section class="py-16 sm:py-20 md:py-24 bg-surface border-t border-outline-variant/30" id="booking">
+<div class="max-w-3xl mx-auto px-4 sm:px-6">
+<div class="bg-surface-container-lowest rounded-2xl sm:rounded-3xl p-6 sm:p-10 md:p-12 border border-outline-variant/30 custom-shadow-elevated">
+<div class="text-center mb-6 sm:mb-8">
+<span class="text-label-md font-label-md text-primary font-semibold uppercase tracking-wider">Priority Scheduling</span>
+<h3 class="text-2xl sm:text-headline-md font-headline-md font-bold text-on-surface mt-1">Book Your Clinical Consultation</h3>
+<p class="text-body-sm font-body-sm text-secondary mt-2">Zero waiting time guarantee. Receive digital confirmation within 15 minutes.</p>
+</div>
+<form class="space-y-4 sm:space-y-5" onsubmit="event.preventDefault(); alert('Appointment Request Received! Our Gurgaon clinic concierge will call you immediately.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+<div>
+<label class="block text-xs sm:text-label-md font-label-md uppercase font-semibold text-on-surface mb-1.5">Patient Full Name</label>
+<input class="w-full h-12 px-4 rounded-xl bg-surface border border-outline-variant/50 text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md font-body-md transition-all" placeholder="e.g. Vikram Mehta" required="" type="text"/>
+</div>
+<div>
+<label class="block text-xs sm:text-label-md font-label-md uppercase font-semibold text-on-surface mb-1.5">Phone Number</label>
+<input class="w-full h-12 px-4 rounded-xl bg-surface border border-outline-variant/50 text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md font-body-md transition-all" placeholder="+91 9811X XXXXX" required="" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+<div>
+<label class="block text-xs sm:text-label-md font-label-md uppercase font-semibold text-on-surface mb-1.5">Concern / Procedure</label>
+<select class="w-full h-12 px-4 rounded-xl bg-surface border border-outline-variant/50 text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md font-body-md transition-all">
+<option>Dental Implants &amp; Consultation</option>
+<option>Invisible Aligners / Smile Simulation</option>
+<option>Painless Root Canal (RCT)</option>
+<option>Smile Design &amp; Veneers</option>
+<option>Routine Checkup &amp; Teeth Cleaning</option>
+</select>
+</div>
+<div>
+<label class="block text-xs sm:text-label-md font-label-md uppercase font-semibold text-on-surface mb-1.5">Preferred Date</label>
+<input class="w-full h-12 px-4 rounded-xl bg-surface border border-outline-variant/50 text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md font-body-md transition-all" required="" type="date"/>
+</div>
+</div>
+<button class="w-full py-3.5 sm:py-4 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-semibold transition-all shadow-md hover:shadow-lg active:scale-[0.99] flex items-center justify-center gap-2 mt-3" type="submit">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+<span>Confirm Consultation Request</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+<!-- 7. Clinic Location, Hours & Interactive Map Frame -->
+<section class="py-16 sm:py-20 md:py-24 bg-surface-container-low border-t border-outline-variant/30" id="clinic-location">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
+<div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-12">
+<!-- Left Details Column -->
+<div class="w-full lg:w-1/2 flex flex-col gap-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-fixed/40 text-on-primary-fixed-variant font-label-md text-label-md font-semibold self-start">
+<span class="material-symbols-outlined text-[16px]">pin_drop</span>Gurgaon Facility
+      </div>
+<h2 class="text-2xl sm:text-headline-lg font-headline-lg font-bold text-on-surface">Visit DentisTree Implant Centre</h2>
+<p class="text-body-md sm:text-body-lg font-body-lg text-on-surface-variant">Located conveniently in Gurgaon’s premier health corridor with valet parking, wheelchair access, and private consultation suites.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
+<div class="p-5 sm:p-6 rounded-2xl bg-surface-container-lowest border border-outline-variant/30">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed/50 flex items-center justify-center text-primary mb-3">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<h4 class="text-label-lg font-label-lg text-on-surface font-semibold mb-1">Clinic Timings</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant font-medium">Mon - Sat: 10:00 AM – 8:00 PM</p>
+<p class="text-caption font-caption text-secondary mt-1">Sunday: By Prior Appointment Only</p>
+</div>
+<div class="p-5 sm:p-6 rounded-2xl bg-surface-container-lowest border border-outline-variant/30">
+<div class="w-10 h-10 rounded-lg bg-secondary-container flex items-center justify-center text-secondary mb-3">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<h4 class="text-label-lg font-label-lg text-on-surface font-semibold mb-1">Prime Location</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant font-medium">DLF Phase / Golf Course Hub, Gurgaon</p>
+<p class="text-caption font-caption text-secondary mt-1">Next to Central Metro Station</p>
+</div>
+</div>
+<div class="p-5 sm:p-6 rounded-2xl bg-surface-container-lowest border border-primary/20 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex items-center gap-3.5">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">support_agent</span>
+</div>
+<div>
+<p class="text-caption font-caption uppercase text-secondary font-semibold tracking-wider">Direct Hotline &amp; WhatsApp</p>
+<p class="text-xl sm:text-headline-sm font-headline-sm font-bold text-on-surface">0124-458-9200</p>
+</div>
+</div>
+<a class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-primary hover:bg-primary-container text-on-primary text-label-lg font-label-lg font-semibold transition-colors shadow-sm text-center" href="tel:01244589200">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Call Desk</span>
+</a>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4">
+<a class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-full bg-inverse-surface text-inverse-on-surface hover:bg-on-surface transition-colors text-label-lg font-label-lg tracking-wider shadow-sm font-semibold text-center" href="tel:+919811000000">
+<span class="material-symbols-outlined text-[20px]">call</span>
+<span>+91 9811X XXXXX</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-primary text-primary hover:bg-primary/5 transition-colors text-label-lg font-label-lg font-semibold text-center" href="https://maps.google.com" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-[18px]">directions</span>
+<span>Get Directions on Maps</span>
+</a>
+</div>
+</div>
+<!-- Right Image / Lounge Visual Column -->
+<div class="w-full lg:w-1/2">
+<div class="rounded-2xl overflow-hidden bg-surface-container-lowest border border-outline-variant/40 custom-shadow-soft p-2.5 sm:p-3 w-full">
+<div class="relative rounded-xl overflow-hidden aspect-[4/3] bg-surface-container">
+<img alt="DentisTree Clinic Luxury Reception and Treatment Lounge Gurgaon" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrD7NCg8a6ghkY7MNsma5RVFY4x62kd8HRAuKBXXCd4y4TMItgW8fsV1y6_Loypg1o8suM_0rGqaOfaodfvB9eC1zxwD4cuToWtpGdAiu77_Cx6AppusktytC0MLIO_tRWMiiumwJ6hRh2o3adt61I40o_QmZTaBu48xi3hkr0nWe33pT7m4Csgj8cP28vZdqKrgiwmLJ3_zXdbfrs2vsXitpucf5jVZ6tekHTDXj_JZiQ"/>
+<div class="absolute inset-0 bg-inverse-surface/10 flex items-center justify-center pointer-events-none">
+<div class="bg-surface-container-lowest px-4 py-2.5 rounded-full custom-shadow-elevated border border-outline-variant/30 flex items-center gap-2.5 animate-bounce">
+<span class="material-symbols-outlined text-primary text-[22px]" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<div class="text-left">
+<p class="text-label-md font-label-md text-on-surface font-bold leading-tight">DentisTree Clinic</p>
+<p class="text-[11px] font-caption text-secondary">Gurgaon Centre</p>
+</div>
+</div>
+</div>
+<div class="absolute bottom-4 right-4 bg-surface-container-lowest/90 backdrop-blur-sm rounded-lg p-1.5 border border-outline-variant/30 flex flex-col gap-1 text-on-surface">
+<button aria-label="Zoom In" class="w-7 h-7 flex items-center justify-center hover:bg-surface-container rounded text-sm font-bold">+</button>
+<div class="h-[1px] bg-outline-variant/30"></div>
+<button aria-label="Zoom Out" class="w-7 h-7 flex items-center justify-center hover:bg-surface-container rounded text-sm font-bold">-</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer (Shared Component Anchor) -->
+<footer class="bg-inverse-surface text-inverse-on-surface border-t border-outline/20 w-full">
+<div class="w-full px-4 sm:px-6 md:px-12 py-12 md:py-16 pb-24 md:pb-16 max-w-7xl mx-auto flex flex-col gap-10 md:gap-12">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10">
+<div class="md:col-span-5 flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="bg-white p-1 rounded-md">
+<img alt="DentisTree" class="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvGEqq1RdFPKQ4vQz0HTapMq20ARuYyo94c1mEoocHtTx6NrcTkNoEiENeN5UNHW6MdL9eSVkzgByoBO964MaFF0PtImNq02TPvscXTUN04NCoSICDWLJ8VVRTvZ7wSt9UR3z1G5V2br8gyaINF8NaoVp6AVnzLhK70eLEo7MhXeqOAo8zEhA1w9SRnnNY4BvfXyDf_KaQDX85KRvt8SrJTW9tErNZ-dPmIDJYZuO3hZFLKOceoWyx9Q"/>
+</div>
+<span class="text-headline-md font-headline-md font-bold text-inverse-on-surface tracking-tight">DentisTree</span>
+</div>
+<p class="text-body-sm font-body-sm text-inverse-on-surface/70 max-w-sm leading-relaxed">The Dental Clinic and Implant Centre, Gurgaon. Setting standard-of-care benchmarks in surgical implantology, painless microscopic endodontics, and digital smile design.</p>
+<div class="flex items-center gap-3 text-inverse-on-surface/60 pt-2">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="text-caption font-caption">NABH Tier-1 Clinical Safety Compliant</span>
+</div>
+</div>
+<div class="md:col-span-3">
+<h4 class="text-base font-headline-sm text-inverse-on-surface font-semibold mb-3 sm:mb-4">Key Treatments</h4>
+<ul class="space-y-2 text-body-sm font-body-sm text-inverse-on-surface/70">
+<li><a class="hover:text-primary-fixed transition-colors" href="#treatments">Dental Implants</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#treatments">Invisible Aligners</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#treatments">Root Canal Treatment</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#treatments">Smile Design &amp; Veneers</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#treatments">Emergency Dental Care</a></li>
+</ul>
+</div>
+<div class="md:col-span-4">
+<h4 class="text-base font-headline-sm text-inverse-on-surface font-semibold mb-3 sm:mb-4">Patient Care &amp; Centre</h4>
+<ul class="space-y-2 text-body-sm font-body-sm text-inverse-on-surface/70 mb-4 sm:mb-6">
+<li><a class="hover:text-primary-fixed transition-colors" href="#doctor">Our Specialists</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#transformations">Transformations Gallery</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#clinic-location">Location &amp; Timings</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Patient Care &amp; Safety Policy</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+<div class="text-caption font-caption text-inverse-on-surface/70 tracking-wide pt-3 border-t border-inverse-on-surface/10 flex flex-wrap items-center gap-2.5 sm:gap-3">
+<span class="inline-flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed">call</span>
+<strong class="text-inverse-on-surface tracking-wider font-semibold">0124-458-9200</strong>
+</span>
+<span class="text-inverse-on-surface/40">•</span>
+<span class="inline-flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed">mail</span>
+<span>contact@dentistreegurgaon.com</span>
+</span>
+</div>
+</div>
+</div>
+<div class="pt-6 sm:pt-8 border-t border-inverse-on-surface/10 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4 text-caption font-caption text-inverse-on-surface/60 text-center sm:text-left">
+<div>© 2025 DentisTree - The Dental Clinic and Implant Centre, Gurgaon. All rights reserved.</div>
+<div class="flex items-center gap-4 sm:gap-6">
+<span>Licensed Private Healthcare Centre</span>
+<span>Gurgaon, Haryana</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- 8. Floating Element (Sticky Bottom-Right WhatsApp Button) -->
+<div class="fixed bottom-6 right-6 z-40 flex items-center group pointer-events-auto">
+<div class="mr-3 hidden md:flex items-center px-3.5 py-1.5 rounded-xl bg-inverse-surface text-inverse-on-surface text-label-md font-label-md shadow-md border border-inverse-on-surface/20 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap antialiased">
+<span>Chat with us on WhatsApp • Instant Clinic Booking</span>
+</div>
+<a aria-label="Chat with us on WhatsApp" class="w-12 h-12 sm:w-14 sm:h-14 p-2.5 sm:p-3 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-200 hover:scale-105 active:scale-95 border-2 border-white antialiased" href="https://wa.me/919811000000?text=Hi%20DentisTree%20Gurgaon,%20I%20would%20like%20to%20inquire%20about%20a%20dental%20appointment." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[24px] sm:text-[30px]" style="font-variation-settings: 'FILL' 1;">chat</span>
+</a>
+</div>
+</body></html>
